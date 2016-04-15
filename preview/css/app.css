@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('../fonts/../fonts/BebasNeue.otf?1460653845') format('opentype'), url('../fonts/../fonts/BebasNeue.ttf?1460653848') format('truetype'), url('../fonts/../fonts/BebasNeue.woff?1460653849') format('woff');
+}
+* {
+  box-sizing: border-box;
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #e9eaed;
+}
+
+body, div {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  overflow: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.clearfix::before, .clearfix::after {
+  display: table;
+  content: ' ';
+  line-height: 0;
+}
+.clearfix::after {
+  clear: both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.fixicon {
+  vertical-align: middle;
+}
+
+.debug {
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+  color: #627aad;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+header {
+  width: 100%;
+  background: #1b1b1b url("../imgs/lol_bg.png") 50% 0 no-repeat;
+  background-size: cover;
+  padding: 50px 0 250px 0;
+  position: relative;
+}
+header .container {
+  overflow: visible;
+}
+header #logo {
+  width: 464px;
+  height: 345px;
+  margin-left: 0;
+}
+header #slogan {
+  margin: 70px 0 0 0;
+}
+header #slogan h1, header #slogan h2 {
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+  text-shadow: 0px 0px 10px #000;
+}
+header #slogan h1 {
+  color: #00c2ff;
+  font-size: 100px;
+  height: 100px;
+  margin-bottom: 5px;
+}
+header #slogan h2 {
+  font-size: 40px;
+  height: 40px;
+}
+header nav {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(29, 29, 29, 0.93);
+  position: absolute;
+  bottom: 0;
+  border: 1px solid #000;
+  border-left: 0;
+  border-right: 0;
+  box-sizing: content-box;
+}
+header nav ul {
+  list-style-type: none;
+  height: 100px;
+  padding: 0;
+  margin: 0 0;
+  float: right;
+  display: -webkit-flex;
+  display: flex;
+}
+header nav ul li {
+  line-height: 100px;
+  display: block;
+  padding: 0 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+header nav ul li:hover, header nav ul li.active {
+  color: #00c2ff;
+}
+header nav ul li.active {
+  background-color: #111118;
+  color: #00c2ff;
+}
+
+.matches {
+  width: 100%;
+  background: #1b1b1b url("../imgs/csgo_bg.png") 50% 0 no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+.matches .categories {
+  float: left;
+}
+.matches .categories h2, .matches .categories h3 {
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 5px;
+  font-family: 'Bebas Neue';
+}
+.matches .categories h2 {
+  color: #00c2ff;
+  font-size: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+.matches .list {
+  float: right;
+  width: 800px;
+  overflow: hidden;
+}
+.matches .list .matche {
+  border-top: 1px solid #58544e;
+  width: 100%;
+  height: 120px;
+}
+.matches .list .matche:last-child {
+  border-bottom: 1px solid #58544e;
+}
+.matches .list .matche .info, .matches .list .matche .team-one, .matches .list .matche .team-two, .matches .list .matche .score {
+  width: 180px;
+  height: 100%;
+  float: left;
+  text-shadow: 0px 0px 3px #000;
+}
+.matches .list .matche .info {
+  width: 260px;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+.matches .list .matche .info img {
+  margin-bottom: 5px;
+}
+.matches .list .matche .info p, .matches .list .matche .info span {
+  margin: 0;
+  color: #a89e9e;
+}
+.matches .list .matche .info span {
+  font-size: 12px;
+}
+.matches .list .matche .team-one, .matches .list .matche .team-two {
+  padding-top: 10px;
+  text-align: center;
+}
+.matches .list .matche .team-one img, .matches .list .matche .team-two img {
+  margin-bottom: 2px;
+}
+.matches .list .matche .score {
+  font-size: 70px;
+  line-height: 120px;
+  font-family: 'Bebas Neue';
+  text-align: center;
+}
+.matches .list .matche p {
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  margin: 2px 0;
+}
+
+.teams {
+  background: #080808 url("../imgs/csgo_team.jpg") top center no-repeat;
+  min-height: 1200px;
+  border-top: 1px solid #000;
+}
+.teams nav {
+  width: 100%;
+  height: 100px;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjAxIi8+PHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4xIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMDEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(255, 255, 255, 0.01)), color-stop(50%, rgba(255, 255, 255, 0.1)), color-stop(100%, rgba(255, 255, 255, 0.01)));
+  background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+}
+.teams nav ul {
+  list-style-type: none;
+  height: 100px;
+  padding: 0;
+  margin: 0 0;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+}
+.teams nav ul li {
+  display: block;
+  width: 120px;
+  height: 100px;
+  margin: 0 20px;
+  padding: 9px 0;
+  text-align: center;
+}
+.teams nav ul li.active {
+  border-bottom: 2px solid #00c2ff;
+}
+.teams nav ul li img {
+  width: 80px;
+  height: 80px;
+}
+.teams nav ul li img:hover {
+  opacity: 0.6;
+}

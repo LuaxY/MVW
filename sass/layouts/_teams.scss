@@ -1,0 +1,44 @@
+.teams {
+    background: #080808 url('../imgs/csgo_team.jpg') top center no-repeat;
+    min-height: 1200px;
+    border-top: 1px solid #000;
+
+    $nav-height: 100px;
+
+    nav {
+        width: 100%;
+        height: $nav-height;
+        @include background-image(linear-gradient(to right, rgba(#fff, 0.01), rgba(#fff, 0.1), rgba(#fff, 0.01)));
+
+        ul {
+            list-style-type: none;
+            height: $nav-height;
+            padding: 0;
+            margin: 0 0;
+            justify-content: center;
+            @include display-flex;
+
+            li {
+                display: block;
+                width: 120px;
+                height: 100px;
+                margin: 0 20px;
+                padding: 9px 0;
+                text-align: center;
+
+                &.active {
+                    border-bottom: 2px solid $main-color;
+                }
+
+                img {
+                    width: 80px;
+                    height: 80px;
+
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+}

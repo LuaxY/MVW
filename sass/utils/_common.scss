@@ -1,0 +1,66 @@
+@include font-face('Bebas Neue', font-files('../fonts/BebasNeue.otf', '../fonts/BebasNeue.ttf', '../fonts/BebasNeue.woff'));
+
+* {
+    box-sizing: border-box;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #e9eaed;
+}
+
+body, div {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    overflow: auto;
+}
+
+@media screen and (min-width: $content-width) {
+    .container {
+        width: $content-width;
+    }
+}
+
+.clearfix {
+    &::before,
+    &::after {
+        display: table;
+        content: ' ';
+        line-height: 0;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.fixicon {
+    vertical-align: middle;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+    color: #627aad;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}

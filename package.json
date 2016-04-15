@@ -1,0 +1,10 @@
+{
+    "name": "My Virtual World",
+    "version": "0.0.1",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-compass": "*",
+        "grunt-contrib-watch": "*",
+        "node-static": "*"
+    }
+}

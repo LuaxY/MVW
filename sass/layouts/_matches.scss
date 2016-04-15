@@ -1,0 +1,91 @@
+.matches {
+    width: 100%;
+    background: #1b1b1b url('../imgs/csgo_bg.png') 50% 0 no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+
+    .categories {
+        float: left;
+
+        h2, h3 {
+            text-transform: uppercase;
+            margin: 0;
+            letter-spacing: 5px;
+            font-family: 'Bebas Neue';
+        }
+
+        h2 {
+            color: $main-color;
+            font-size: 70px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .list {
+        float: right;
+        width: 800px;
+        overflow: hidden;
+
+        $matche-height: 120px;
+
+        .matche {
+            border-top: 1px solid #58544e;
+            width: 100%;
+            height: $matche-height;
+
+
+            &:last-child {
+                border-bottom: 1px solid #58544e;
+            }
+
+            .info, .team-one, .team-two, .score {
+                width: 180px;
+                height: 100%;
+                float: left;
+                @include text-shadow(0px 0px 3px #000);
+            }
+
+            .info {
+                width: 260px;
+                padding-left: 40px;
+                padding-top: 15px;
+
+                img {
+                    margin-bottom: 5px;
+                }
+
+                p, span {
+                    margin: 0;
+                    color: #a89e9e;
+                }
+
+                span {
+                    font-size: 12px;
+                }
+            }
+
+            .team-one, .team-two {
+                padding-top: 10px;
+                text-align: center;
+
+                img {
+                    margin-bottom: 2px;
+                }
+            }
+
+            .score {
+                font-size: 70px;
+                line-height: $matche-height;
+                font-family: 'Bebas Neue';
+                text-align: center;
+            }
+
+            p {
+                font-family: 'Bebas Neue';
+                letter-spacing: 2px;
+                margin: 2px 0;
+            }
+        }
+    }
+}
